@@ -1,0 +1,8 @@
+:development:
+  key: "Development value"
+
+:testing:
+  key: "Testing value"
+
+:production:
+  key: "Production value"

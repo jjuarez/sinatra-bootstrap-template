@@ -1,14 +1,12 @@
 !!!
 %html
   %head
-    %title= @title || SiteConfig.title
-    %meta{ :name =>"viewport",    :content=>"width=device-width, initial-scale=1.0" }
+    %title= configatron.title
     %meta{ :name =>"description", :content=>"This is a pretty Sinatra+Bootstrap template" }
     %meta{ :name =>"author",      :content=>"Javier Juarez" }
     %link{ :href =>'/css/bootstrap.min.css',            :rel => 'stylesheet', :type => 'text/css' }
-    %link{ :href =>'/css/bootstrap-responsive.min.css', :rel => 'stylesheet', :type => 'text/css' }
   %body
     %h1
-      %a{ :href => '/'}= SiteConfig.title
+      %a{ :href => '/'}= configatron.title
       = yield
-      %p#legal= "&mdash; &copy; #{Time.now.strftime('%Y')} #{SiteConfig.author} &mdash;"
+      %p#legal= "&mdash; &copy; #{Time.now.strftime('%Y')} #{configatron.author} &mdash;"
