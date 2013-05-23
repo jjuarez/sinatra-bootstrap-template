@@ -1,6 +1,5 @@
-$LOAD_PATH.push File.dirname(__FILE__)
+$:.push File.dirname(__FILE__)
 
-require 'application'
-
+require 'init'
 
 run MyApplication

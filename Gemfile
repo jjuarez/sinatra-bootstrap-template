@@ -1,13 +1,13 @@
 source 'https://rubygems.org/'
 
-group :default do
-
-  gem 'sinatra'
-  gem 'haml'
-end
+gem 'configatron'
+gem 'sinatra'
+gem 'haml'
 
 group :development do
-
+ 
   gem 'bundler'
+  gem 'foreman'
   gem 'shotgun'
+  gem 'thin'
 end
