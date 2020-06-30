@@ -1,13 +1,11 @@
 source 'https://rubygems.org/'
 
 gem 'configatron'
-gem 'sinatra'
-gem 'haml'
+gem 'sinatra', '~>2.0.1'
+gem 'haml', '~> 5.0.0'
 
 group :development do
  
   gem 'bundler'
   gem 'foreman'
-  gem 'shotgun'
-  gem 'thin'
 end
